@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kontakti Lomake</title>
+</head>
+<form>
+    <table>        
+        <tr>
+            <td>
+                <fieldset>
+                    <legend>Kontakti informaatio:</legend>
+                    <table>
+                        <tr>
+                        <td><label for="Enimi">Etunimi:</label></td>
+                        <td><input type="text" id="Enimi" name="Enimi"></td>
+                        <td colspan="2"><label>Preferoitu kontakti metodi:</label></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Snimi">Sukunimi:</label></td>
+                        <td><input type="text" id="Snimi" name="Snimi"></td>
+                        <td><input type="checkbox" id="Valitse Sähköposti" value="Valitse Sähköposti"></td>
+                        <td><label for="Valitse Sähköposti" class="Kontakti-metodi">Sähköposti</td>
+                    </tr>
+                    <tr>
+                        <td><label for="Sähköposti">Sähköposti:</label></td>
+                        <td><input type="email" id="Sähköposti" name="Sähköposti"></td>
+                        <td><input type="checkbox" id="Valitse puhelin" value="Valitse puhelin"></td>
+                        <td><label for="Valitse puhelin" class="Kontakti-metodi">Puhelin</td>                     
+                    </tr>
+                    <tr>
+                        <td><label for="puhelin">Puhelin:</label></td>
+                        <td><input type="Puh" id="Puhelin" name="Puhelin"></td>
+                    </tr>
+                    </table>
+                </fieldset>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <fieldset>
+                    <legend>Palaute:</legend>
+                    <table>
+                        <tr>
+                            <td><label for="Aihe">Kirjoita aihe:</label></td>
+                            <td><input type="text" id="Aihe" name="Aihe"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><textarea id="Palaute" name="Palaute" rows="10" cols="60"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td><label for="tiedosto">Liitä tiedosto</label></td>
+                            <td><input type="file" id="tiedosto" name="tiedosto"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><input id="Lähetänappula" type="submit" value="Lähetä"></td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </td>
+        </tr>
+    </table> 
+</form>
+</html>
